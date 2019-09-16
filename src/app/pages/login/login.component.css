@@ -1,0 +1,65 @@
+.logincomponent{
+    color: dimgrey;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    overflow-x: hidden;
+}
+
+.logincomponent h2{
+    font-weight: bold;
+}
+
+.logincomponent .divider{
+    border-left: 2px solid dimgrey;
+    height: 100%;
+}
+
+.logincomponent input:not([type='checkbox']){
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border: 2px solid dimgrey;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.logincomponent button{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: dimgrey;
+    border: 0;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.logincomponent .clicked{
+    background-color: white;
+    color: black;
+}
+
+
+.logincomponent .success{
+    background-color: green;
+    color: white;
+}
+
+.row .alert{
+    overflow-x: hidden;
+}
+
+.alert p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    font-size: 15pt;
+}
+
+@media only screen and (max-width: 767px){
+    .logincomponent{
+        color: dimgrey;
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+    }
+}

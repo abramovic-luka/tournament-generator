@@ -1,0 +1,30 @@
+.header {
+    margin-top: 0;
+    color: white;
+    background-color: dimgrey;
+    overflow-x: hidden;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.fancyButton {
+    background-color: coral;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.fancySearch {
+    color: dimgrey;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 18pt;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+}

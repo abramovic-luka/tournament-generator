@@ -1,0 +1,17 @@
+.navbar-custom {
+    background-color: coral;
+    margin-bottom: 0;
+    border-radius: 0;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    position: fixed;
+}
+
+.navbar-custom a {
+    color: white;
+}
+
+.navbar-custom a:hover {
+    background-color: coral;
+}

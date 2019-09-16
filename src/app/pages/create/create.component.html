@@ -1,0 +1,157 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center container">
+  <div class="row">
+    <div class="col-sm-4 sidebar">
+      <h2>Teams</h2>
+      <br>
+      <form>
+        <input placeholder="Team 1" type="text" name="team01" id="team_one"><br>
+        <input placeholder="Team 2" type="text" name="team02" id="team_two"><br>
+        <input placeholder="Team 3" type="text" name="team03" id="team_three"><br>
+        <input placeholder="Team 4" type="text" name="team04" id="team_four"><br>
+        <input placeholder="Team 5" type="text" name="team05" id="team_five"><br>
+        <input placeholder="Team 6" type="text" name="team06" id="team_six"><br>
+        <input placeholder="Team 7" type="text" name="team07" id="team_seven"><br>
+        <input placeholder="Team 8" type="text" name="team08" id="team_eight">
+      </form>
+      <input type="submit" value="Insert Teams" (click)="insertTeams()">
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-1-8">
+        <ul class="matchup">
+          <li><span class="seed">1</span> <span id='team1'></span> <span class="score" id="scoreHomeQ1"></span></li>
+          <li><span class="seed">2</span> <span id='team2'></span> <span class="score" id="scoreAwayQ1"></span></li>
+        </ul>
+        <ul class="matchup">
+          <li><span class="seed">3</span> <span id='team3'></span> <span class="score" id="scoreHomeQ2"></span></li>
+          <li><span class="seed">4</span> <span id='team4'></span> <span class="score" id="scoreAwayQ2"></span></li>
+        </ul>
+        <ul class="matchup">
+          <li><span class="seed">5</span> <span id='team5'></span> <span class="score" id="scoreHomeQ3"></span></li>
+          <li><span class="seed">6</span> <span id='team6'></span> <span class="score" id="scoreAwayQ3"></span></li>
+        </ul>
+        <ul class="matchup">
+          <li><span class="seed">7</span> <span id='team7'></span> <span class="score" id="scoreHomeQ4"></span></li>
+          <li><span class="seed">8</span> <span id='team8'></span> <span class="score" id="scoreAwayQ4"></span></li>
+        </ul>
+      </div>
+      <!--Semi-Finals-->
+      <div class="col-1-8">
+        <div class="round-two-top">
+          <ul class="matchup">
+            <li><span class="seed"></span> <span id='insertWinner1b'></span> <span class="score" id="scoreHomeS1"></span></li>
+            <li><span class="seed"></span> <span id='insertWinner2b'></span> <span class="score" id="scoreAwayS1"></span></li>
+          </ul>
+        </div>
+        <div class="round-two-bottom">
+          <ul class="matchup round-two-bottom">
+            <li><span class="seed"></span> <span id='insertWinner3b'></span> <span class="score" id="scoreHomeS2"></span></li>
+            <li><span class="seed"></span> <span id='insertWinner4b'></span> <span class="score" id="scoreAwayS2"></span></li>
+          </ul>
+        </div>
+      </div>
+      <!--Final-->
+      <div class="col-1-8 champ">
+        <div class="round-three">
+          <ul class="matchup">
+            <li><span class="seed"></span> <span id='insertWinner5b'></span> <span class="score" id="scoreHomeFinal"></span></li>
+            <li><span class="seed"></span> <span id='insertWinner6b'></span> <span class="score" id="scoreAwayFinal"> </span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+    <div class="row">
+        <table>
+            <tr>
+              <th colspan="5" class="tableTitle">Quarter Finals</th>
+            </tr>
+            <tr>
+              <th class="column">Home</th>
+              <th colspan="3">Result</th>
+              <th class="column">Away</th>
+            </tr>
+            <tr>
+              <td><span id='team1_1'></span></td>
+              <td><input id="homeScore1" type="number" min="0"></td>
+              <td><input type="submit" value="-" (click)="resultQ1()"></td>
+              <td><input id="awayScore1" type="number" min="0"></td>
+              <td><span id='team2_2'></span></td>
+            </tr>
+            <tr>
+                <td><span id='team3_3'></span></td>
+                <td><input id="homeScore2" type="number" min="0"></td>
+                <td><input type="submit" value="-" (click)="resultQ2()"></td>
+                <td><input id="awayScore2" type="number" min="0"></td>
+                <td><span id='team4_4'></span></td>
+            </tr>
+            <tr>
+                <td><span id='team5_5'></span></td>
+                <td><input id="homeScore3" type="number" min="0"></td>
+                <td><input type="submit" value="-" (click)="resultQ3()"></td>
+                <td><input id="awayScore3" type="number" min="0"></td>
+                <td><span id='team6_6'></span></td>
+            </tr>
+            <tr>
+                <td><span id='team7_7'></span></td>
+                <td><input id="homeScore4" type="number" min="0"></td>
+                <td><input type="submit" value="-" (click)="resultQ4()"></td>
+                <td><input id="awayScore4" type="number" min="0"></td>
+                <td><span id='team8_8'></span></td>
+            </tr>
+  
+            <tr>
+                <th colspan="5" class="tableTitle">Semi Finals</th>
+            </tr>
+            <tr>
+                <td><span id='insertWinner1t'></span></td>
+                <td><input id="homeScore5" type="number" min="0"></td>
+                <td><input type="submit" value="-" (click)="resultS1()"></td>
+                <td><input id="awayScore5" type="number" min="0"></td>
+                <td><span id='insertWinner2t'></span></td>
+            </tr>
+            <tr>
+                <td><span id='insertWinner3t'></span></td>
+                <td><input id="homeScore6" type="number" min="0"></td>
+                <td><input type="submit" value="-" (click)="resultS2()"></td>
+                <td><input id="awayScore6" type="number" min="0"></td>
+                <td><span id='insertWinner4t'></span></td>
+            </tr>
+  
+            <tr>
+              <th colspan="5" class="tableTitle">3rd Place Play-off</th>
+            </tr>
+            <tr>
+              <td><span id='insertLoserXt'></span></td>
+              <td><input id="homeScoreZ" type="number" min="0"></td>
+              <td><input type="submit" value="-" (click)="thirdPlace()"></td>
+              <td><input id="awayScoreZ" type="number" min="0"></td>
+              <td><span id='insertLoserYt'></span></td>
+            </tr>
+
+            <tr>
+                <th colspan="5" class="tableTitle">Final</th>
+            </tr>
+            <tr>
+                <td><span id='insertWinner5t'></span></td>
+                <td><input id="homeScore7" type="number" min="0"></td>
+                <td><input type="submit" value="-" (click)="final()"></td>
+                <td><input id="awayScore7" type="number" min="0"></td>
+                <td><span id='insertWinner6t'></span></td>
+            </tr>
+          </table>
+    </div>
+
+
+  
+  
+  </div>
+</div>
